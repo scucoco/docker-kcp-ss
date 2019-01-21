@@ -13,7 +13,7 @@ SS_CONF="/usr/local/conf/ss_config.json"
 # ======= SS CONFIG ======
 SS_SERVER_ADDR=${SS_SERVER_ADDR:-0.0.0.0}                     #"server": "0.0.0.0",
 SS_SERVER_PORT=${SS_SERVER_PORT:-8388}                        #"server_port": 8388,
-SS_PASSWORD=${SS_PASSWORD:-password}                          #"password":"password",
+SS_PASSWORD=${SS_PASSWORD:-801201}                          #"password":"password",
 SS_METHOD=${SS_METHOD:-aes-256-cfb}                           #"method":"aes-256-cfb",
 SS_TIMEOUT=${SS_TIMEOUT:-600}                                 #"timeout":600,
 SS_DNS_ADDR=${SS_DNS_ADDR:-8.8.8.8}                           #-d "8.8.8.8",
@@ -22,10 +22,10 @@ SS_ONETIME_AUTH=${SS_ONETIME_AUTH:-false}                     #-A support,
 SS_FAST_OPEN=${SS_FAST_OPEN:-true}                            #--fast-open support,
 # ======= KCPTUN CONFIG ======
 KCPTUN_LISTEN=${KCPTUN_LISTEN:-4441}                         #"listen": ":45678",
-KCPTUN_SS_LISTEN=${KCPTUN_SS_LISTEN:-4442}                   #"listen": ":45678", kcptun for ss listen port
+KCPTUN_SS_LISTEN=${KCPTUN_SS_LISTEN:-8388}                   #"listen": ":45678", kcptun for ss listen port
 KCPTUN_SOCKS5_PORT=${KCPTUN_SOCKS5_PORT:-12948}               #"socks_port": 12948,
-KCPTUN_KEY=${KCPTUN_KEY:-password}                            #"key": "password",
-KCPTUN_CRYPT=${KCPTUN_CRYPT:-salsa20}                         #"crypt": "salsa20",
+KCPTUN_KEY=${KCPTUN_KEY:-801201}                            #"key": "801201",
+KCPTUN_CRYPT=${KCPTUN_CRYPT:-aes}                         #"crypt": "salsa20",
 KCPTUN_MODE=${KCPTUN_MODE:-fast2}                             #"mode": "fast2",
 KCPTUN_MTU=${KCPTUN_MTU:-1400}                                #"mtu": 1400,
 KCPTUN_SNDWND=${KCPTUN_SNDWND:-2048}                          #"sndwnd": 2048,
