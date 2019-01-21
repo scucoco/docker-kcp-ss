@@ -7,7 +7,7 @@ MAINTAINER cnDocker
 ENV SS_URL=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.2.3/shadowsocks-libev-3.2.3.tar.gz \
     SS_DIR=shadowsocks-libev-3.2.3 \
     CONF_DIR="/usr/local/conf" \
-    kcptun_latest="https://github.com/xtaci/kcptun/releases/latest" \
+    kcptun_latest="https://github.com/xtaci/kcptun/releases/download/v20190109/kcptun-linux-amd64-20190109.tar.gz" \
     KCPTUN_DIR=/usr/local/kcp-server
 
 RUN set -ex && \
